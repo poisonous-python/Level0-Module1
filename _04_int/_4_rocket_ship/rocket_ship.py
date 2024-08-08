@@ -21,7 +21,10 @@ def mouse_pressed(event):
     # of a triangle
     points = [x, y, x - 50, y + 100, x + 50, y + 100]
     canvas.create_polygon(points, fill='gray', width=2) # draws triangle
-    
+    recpoints= [x+50, y+100, x-50, y+400]
+    canvas.create_rectangle(recpoints, fill='black', width=2)
+    hexpts= [x-50, y+400, x+50, y+400,  x+100, y+450, x-100, y+450]
+    canvas.create_polygon(hexpts, fill='gray', width=2)
     # 1. Add details to your rocket to make it look better. You can look at
     #    rocket.png for inspiration.
     
