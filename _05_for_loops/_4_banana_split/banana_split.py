@@ -23,6 +23,11 @@ Text Rendering Example:
                     x    y                                                       
 canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
 '''
+banspl="ice cream"
+for i in range(4):
+    if i==3:
+        banspl="banana"
+    canvas.create_text(100, 50+(i*30), text=banspl, font=("Arial", 20) )
 # Put your code below
 
 
